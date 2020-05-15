@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+package 'xz-utils'
+
 directory "#{node['fivem']['prefix']}/fivem/server" do
   recursive true
 end

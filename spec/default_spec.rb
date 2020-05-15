@@ -37,6 +37,10 @@ describe 'fivem::default' do
     stub_command('test -f 2431-350dd7bd5c0176216c38625ad5b1108ead44674d-fx.tar.xz').and_return(false)
   end
 
+  it 'installs package[xz-utils]' do
+    expect(subject).to install_package('xz-utils')
+  end
+
   it 'creates directory[/server/fivem/server]' do
     expect(subject).to create_directory('/server/fivem/server').with(recursive: true)
   end
