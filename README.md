@@ -54,7 +54,7 @@ Mariadb server & client configuration
 
 #### fivem::vrp
 | Key                        | Type   | Description                                                     |
-| -------------------------- | ------ | ---------------------è----------------------------------------- |
+| -------------------------- | ------ | --------------------------------------------------------------- |
 | `[fivem][vrp][repository]` | String | vRP repository (default: `https://github.com/ImagicTheCat/vRP`) |
 | `[fivem][vrp][reference]`  | String | vRP reference (default: `master`)                               |
 
