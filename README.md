@@ -31,6 +31,7 @@ General FiveM server setup
 | `[fivem][config]`    | Hash   | Server configuration                                   |
 
 | Key                                | Type   | Description                                                                      |
+| ---------------------------------- | ------ | -------------------------------------------------------------------------------- |
 | `[fivem][server_data][repository]` | String | Server data repository (default: `https://github.com/citizenfx/cfx-server-data`) |
 | `[fivem][server_data][reference]`  | String | Server data reference (default: `master`)                                        |
 
@@ -39,6 +40,7 @@ General FiveM server setup
 Mariadb server & client configuration
 
 | Key                                  | Type   | Description                                        |
+| ------------------------------------ | ------ | -------------------------------------------------- |
 | `[fivem][mariadb][version]`          | String | MariaDB version (default: `10.3`)                  |
 | `[fivem][mariadb][server][host]`     | String | MariaDB server bind address (default: `127.0.0.1`) |
 | `[fivem][mariadb][server][port]`     | String | MariaDB server bind port (default: `3306`)         |
@@ -46,16 +48,19 @@ Mariadb server & client configuration
 
 #### fivem::mysql_async
 | Key                                | Type   | Description                                                                        |
+| ---------------------------------- | ------ | ---------------------------------------------------------------------------------- |
 | `[fivem][mysql_async][repository]` | String | mysql_async repository (default: `https://github.com/brouznouf/fivem-mysql-async`) |
 | `[fivem][mysql_async][reference]`  | String | mysql_async reference (default: `v2.1.1`)                                          |
 
 #### fivem::vrp
 | Key                        | Type   | Description                                                     |
+| -------------------------- | ------ | ---------------------è----------------------------------------- |
 | `[fivem][vrp][repository]` | String | vRP repository (default: `https://github.com/ImagicTheCat/vRP`) |
 | `[fivem][vrp][reference]`  | String | vRP reference (default: `master`)                               |
 
 #### fivem::vrp_basic_mission
 | Key                           | Type   | Description                                                                   |
+| ----------------------------- | ------ | ----------------------------------------------------------------------------- |
 | `[fivem][vrp_bm][repository]` | String | vRP repository (default: `https://github.com/ImagicTheCat/vRP-basic-mission`) |
 | `[fivem][vrp_bm][reference]`  | String | vRP reference (default: `master`)                                             |
 
