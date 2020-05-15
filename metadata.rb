@@ -8,7 +8,6 @@ chef_version '>= 12.0'
 
 supports 'debian'
 
-depends 'git'
 depends 'mariadb'
 
 source_url 'https://github.com/sliim-cookbooks/fivem'

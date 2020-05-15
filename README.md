@@ -7,9 +7,10 @@ Configure FiveM server.
 
 Requirements
 ------------
+#### Git
+Git can be installed with the [git](https://supermarket.chef.io/cookbooks/git) cookbook or from package.
 
 #### Cookbooks
-- [git](https://supermarket.chef.io/cookbooks/git)
 - [mariadb](https://supermarket.chef.io/cookbooks/mariadb)
 
 #### Platforms
