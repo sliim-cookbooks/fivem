@@ -1,0 +1,17 @@
+# Fivem server configuration template
+
+<% @endpoints.each do |proto, value| %>
+endpoint_add_<%= proto %> "<%= value %>"
+<% end %>
+
+<% @resources.each do |res| %>
+start <%= res %>
+<% end %>
+
+<% @config.each do |key, value| %>
+<% if value.instance_of?(String) %>
+<%= key %> "<%= value %>"
+<% else %>
+<%= key %> <%= value %>
+<% end %>
+<% end %>

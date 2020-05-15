@@ -1,0 +1,28 @@
+---
+driver:
+  name: docker
+  binary: docker
+  use_sudo: false
+
+provisioner:
+  name: chef_zero
+  require_chef_omnibus: <%= ENV['CHEF_VERSION'] || 13 %>
+  chef_license: accept
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: debian-10
+
+suites:
+  - name: default
+    run_list:
+      - recipe[build-essential]
+      - recipe[git]
+      - recipe[fivem]
+      # - recipe[fivem::mariadb_server] # FIXME: mariadb server on kitchen-docker
+      - recipe[fivem::mysql_async]
+      - recipe[fivem::es]
+      # - recipe[fivem::vrp] # FIXME: mariadb server on kitchen-docker
+      # - recipe[fivem::vrp_basic_mission] # FIXME: mariadb server on kitchen-docker
