@@ -17,6 +17,13 @@ describe 'fivem::mariadb_server' do
             password: 'specpass')
   end
 
+  it 'creates mariadb_server_install[FiveM MariaDB Server]' do
+    expect(subject).to create_mariadb_server_install('FiveM MariaDB Server')
+      .with(setup_repo: true,
+            version: '10.1',
+            password: 'specpass')
+  end
+
   it 'modifies mariadb_server_configuration[FiveM MariaDB Server Configuration]' do
     expect(subject).to modify_mariadb_server_configuration('FiveM MariaDB Server Configuration')
       .with(version: '10.1',
