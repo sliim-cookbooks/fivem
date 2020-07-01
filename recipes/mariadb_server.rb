@@ -17,6 +17,7 @@
 package 'gnupg'
 
 mariadb_server_install 'FiveM MariaDB Server' do
+  action [:install, :create]
   setup_repo true
   version node['fivem']['mariadb']['version']
   password node['fivem']['mariadb']['server']['password']
